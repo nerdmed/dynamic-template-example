@@ -1,0 +1,22 @@
+<head>
+  <title>dynamic-template</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> Template.dynamic template="foo" }}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+
+<template name="foo">
+  <button>Click Me</button>
+  <p>FOOO You've pressed the button {{counter}} times.</p>
+</template>
